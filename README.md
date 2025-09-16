@@ -33,6 +33,9 @@ create_scatter_plot(
     y_label='Ось Y'
 )
 ```
+## Requirements
+matplotlib==3.7.1
+pandas==2.0.3
 
 ## Обработка ошибок
 ### Функция включает проверки для предотвращения ошибок:
