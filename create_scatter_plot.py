@@ -5,13 +5,21 @@ import numpy
 
 def is_list_of_numbers(value):
     """
+    Parameters:
+    -----------
+    value : any
+        Значение для проверки. Может быть списком, pandas Series, numpy массивом
+        или другим итерируемым объектом.
+    
+    Returns:
+    --------
+    bool
+        True - если значение является коллекцией и все её элементы являются числами
+        (int, float, numpy.integer, numpy.floating).
+        False - если значение не является коллекцией или содержит нечисловые элементы.
+    
     Проверяет, является ли значение списком чисел.
 
-    Args:
-        value: Значение для проверки
-
-    Returns:
-        bool: True если значение является списком чисел, иначе False
     """
     if not isinstance(value, (list, pandas.core.series.Series, numpy.ndarray)):
         return False
